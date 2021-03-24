@@ -28,4 +28,12 @@ public class VisitorTest {
     public void hasMoney() {
         assertEquals(40.0, visitor.getMoney(), 0.1);
     }
+
+    @Test
+    public void isAllowedOnPlayground()
+    {
+        assertEquals(true, visitor.isAllowed());
+
+        System.out.println(visitor.isAllowed());
+    }
 }
