@@ -13,7 +13,7 @@ public class PlaygroundTest {
     @Before
     public void setUp() throws Exception {
         playground = new Playground("Fun Zone", 7);
-        visitor = new Visitor(30, 1.2, 40.0);
+        visitor = new Visitor(14, 1.2, 40.0);
 
     }
 
@@ -33,7 +33,7 @@ public class PlaygroundTest {
     }
 
     @Test
-    public void isAllowedOnPlayground()
+    public void isAllowedOn()
     {
         assertEquals(true, visitor.isAllowed());
 

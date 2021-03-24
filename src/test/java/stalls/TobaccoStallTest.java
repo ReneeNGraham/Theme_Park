@@ -4,12 +4,14 @@ import org.junit.Before;
 import org.junit.Test;
 import people.Visitor;
 
+
 import static org.junit.Assert.assertEquals;
 
 public class TobaccoStallTest {
 
     TobaccoStall tobaccoStall;
     Visitor visitor;
+
 
     @Before
     public void setUp() throws Exception {
@@ -33,12 +35,11 @@ public class TobaccoStallTest {
     }
 
     @Test
-    public void isAllowedAtTobaccoStall()
+    public void isAllowed()
 
     {
-        assertEquals(true, visitor.isAllowed());
+        assertEquals(false, visitor.isAllowed());
 
         System.out.println(visitor.isAllowed());
     }
-
 }

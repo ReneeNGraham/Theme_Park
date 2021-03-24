@@ -27,14 +27,14 @@ public class Visitor implements ISecurity, ITicketed {
         return money;
     }
 
-    public boolean isAllowed() {
-        if (this.age <= 15) {
-            return true;
-        } else if (this.age <= 18) {
-        }
-        System.out.println("Not allowed on playground Playground)");
-        return false;
-    }
+//    public boolean isAllowed() {
+//        if (this.age <= 15) {
+//            return true;
+//        } else if (this.age <= 18) {
+//        }
+//        System.out.println("Not allowed on Playground)");
+//        return false;
+//    }
 
     public double defaultPrice() {
         return defaultPrice();
@@ -46,5 +46,10 @@ public class Visitor implements ISecurity, ITicketed {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public boolean isAllowed() {
+        return true;
     }
 }

@@ -1,6 +1,6 @@
 package stalls;
 
-public abstract class Stall {
+public abstract class Stall  {
 
     private String name;
     private String ownerName;
